@@ -1,0 +1,35 @@
+---
+title: Sidenotes and OpenerText
+sidebar_position: 1
+hide_table_of_contents: true
+sidenotes: true
+---
+
+# Sidenotes and OpenerText
+
+<OpenerText>
+**On this page**: an opening paragraph set larger than body copy, numbered sidenotes, unnumbered margin notes, and notes inside an admonition and a blockquote.
+</OpenerText>
+
+This page sets `sidenotes: true` and `hide_table_of_contents: true` in its frontmatter. Above 996px, notes float into the right margin. At or below 996px, each numbered marker becomes a button that opens its note inline.<Sidenote>This is the first numbered sidenote. Resize the window below 996px to see it collapse.</Sidenote>
+
+Place markers at the end of a sentence, since that is where the collapsed note breaks the paragraph.<Sidenote>A second note, so the counter has something to count. Notes can hold **bold**, _italic_, `code` and [links](/posts/intro).</Sidenote> The counter is CSS, so React never has to know a note's index.
+
+<MarginNote>An unnumbered margin note. It has no marker, so on narrow screens it falls into the flow as a plain block instead of collapsing.</MarginNote>
+Margin notes suit asides, glosses and figure captions. This paragraph follows one.
+
+## Inside containers
+
+:::note
+
+A note inside an admonition subtracts the admonition's padding, so it lines up with notes in plain paragraphs.<Sidenote>Sidenote inside an admonition.</Sidenote>
+
+:::
+
+> A note inside a blockquote does the same with the blockquote's padding.<Sidenote>Sidenote inside a blockquote.</Sidenote>
+
+## Filler
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<Sidenote>One more, to check spacing between consecutive notes.</Sidenote> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
